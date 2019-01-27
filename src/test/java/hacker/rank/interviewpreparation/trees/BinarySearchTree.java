@@ -29,19 +29,19 @@ public class BinarySearchTree {
 
     }
 
-    private boolean containsRecursive(Node current, int searchKey){
+    private boolean containsRecursive(Node current, int searchKey) {
 
-        if(current==null){
+        if (current == null) {
             return false;
         }
         if (searchKey == current.key) {
             return true;
         }
 
-        if(searchKey<current.key){
-            return containsRecursive(current.left,searchKey);
-        }else{
-            return containsRecursive(current.right,searchKey);
+        if (searchKey < current.key) {
+            return containsRecursive(current.left, searchKey);
+        } else {
+            return containsRecursive(current.right, searchKey);
         }
 
     }
@@ -80,24 +80,23 @@ public class BinarySearchTree {
         return root.left == null ? root.key : findSmallestValue(root.left);
     }
 
-
     public void delete(int key) {
         root = deleteRecursive(root, key);
     }
 
-    public boolean contains(int key){
+    public boolean contains(int key) {
         return containsRecursive(root, key);
     }
 
-    public void add(int key){
-        root = addRecursive(root, key);
+    public void add(int value) {
+        root = addRecursive(root, value);
     }
 
-    class Node {
+    public static class Node {
         int key;
         Node left, right;
 
-        Node(int key) {
+        public Node(int key) {
             this.key = key;
         }
 
@@ -108,7 +107,7 @@ public class BinarySearchTree {
         int[] arr = {7, 4, 1, 5, 8, 11};
 
         BinarySearchTree bt = new BinarySearchTree();
-        Arrays.stream(arr).forEach(i->bt.add(i));
+        Arrays.stream(arr).forEach(i -> bt.add(i));
 
         bt.delete(4);
     }
