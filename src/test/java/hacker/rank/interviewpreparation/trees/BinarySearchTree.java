@@ -92,6 +92,14 @@ public class BinarySearchTree {
         root = addRecursive(root, value);
     }
 
+    public void inorder(Node current) {
+        if (current != null) {
+            inorder(current.left);
+            System.out.println(current.key);
+            inorder(current.right);
+        }
+    }
+
     public static class Node {
         int key;
         Node left, right;
@@ -108,8 +116,8 @@ public class BinarySearchTree {
 
         BinarySearchTree bt = new BinarySearchTree();
         Arrays.stream(arr).forEach(i -> bt.add(i));
-
-        bt.delete(4);
+        bt.inorder(bt.root);
+        //bt.delete(4);
     }
 }
 
