@@ -2,6 +2,7 @@ package hacker.rank.interviewpreparation.java8;
 
 import org.junit.Test;
 
+import java.util.Map;
 import java.util.Random;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -14,9 +15,13 @@ public class RadmonTest {
 
         Random rd = new Random();
 
-        IntStream.range(0, 1000000).map(i -> rd.nextInt() % 7).boxed()
-                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        Map<Integer, Long> result =IntStream.range(0, 10000000).map(i -> Math.abs(rd.nextInt()) % 7).boxed()
+                                            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println(result);
     }
+
+
+
 
 
 }
