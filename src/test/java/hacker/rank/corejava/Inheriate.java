@@ -1,4 +1,4 @@
-package hacker.rank.interviewpreparation.java8;
+package hacker.rank.corejava;
 
 import org.junit.Test;
 

@@ -1,13 +1,10 @@
-package hacker.rank.interviewpreparation.java8;
+package hacker.rank.corejava;
 
 import org.junit.Test;
-import sun.jvm.hotspot.debugger.ThreadAccess;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import static org.junit.Assert.assertEquals;
 

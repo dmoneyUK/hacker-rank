@@ -1,10 +1,9 @@
-package hacker.rank.interviewpreparation.java8;
+package hacker.rank.corejava;
 
 import org.junit.Test;
 
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
