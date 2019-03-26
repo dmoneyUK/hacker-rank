@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class StreamTest {
     
-    
+ 
     @Test
     public void testStreamSortLimit() {
         int[] arr = {6, 3, 5, 1, 8, 2, 4, 9, 7, 22, 11, 10};
