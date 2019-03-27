@@ -14,15 +14,11 @@ public class BinarySearchTree {
     private Node addRecursive(Node current, int newKey) {
 
         if (current == null) {
-            return new Node(newKey);
-        }
-
-        if (newKey < current.key) {
+            current = new Node(newKey);
+        }else if (newKey < current.key) {
             current.left = addRecursive(current.left, newKey);
         } else if (newKey > current.key) {
             current.right = addRecursive(current.right, newKey);
-        } else {
-            return current;
         }
 
         return current;
