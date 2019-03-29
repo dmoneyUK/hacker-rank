@@ -1,5 +1,7 @@
 package leetcode.amazon.tree;
 
+import static leetcode.amazon.tree.BinaryTree.*;
+
 public class SymmetricTree {
     
     

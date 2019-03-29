@@ -1,4 +1,4 @@
-package concurrency.blockingarray;
+package hacker.rank.corejava.blockingarray;
 
 import java.util.Arrays;
 import java.util.concurrent.Executors;
