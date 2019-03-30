@@ -58,14 +58,15 @@ public class TestVolatile {
     };
     
     
-    @Test
+    @Test(expected = TimeoutException.class)
     public void should_never_finish_if_not_using_any_visibility_control() throws InterruptedException, ExecutionException, TimeoutException {
     
         Future<Long> future = runTask(NORMAL_KEEP_RUNNING_TASK);
 
         stopNormalRunning();
-
+    
         getResult(future);
+        
     }
 
     @Test
@@ -136,7 +137,7 @@ public class TestVolatile {
     }
     
     private void getResult(Future<Long> future) throws InterruptedException, ExecutionException, TimeoutException {
-        long count = future.get(10, TimeUnit.SECONDS);
+        long count = future.get(5, TimeUnit.SECONDS);
         System.out.println("Finished after: " + count/100000);
     }
 

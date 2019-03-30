@@ -1,5 +1,6 @@
 package hacker.rank.corejava;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.stream.IntStream;
 public class StreamTest {
     
  
+    @Ignore
     @Test
     public void testStreamSortLimit() {
         int[] arr = {6, 3, 5, 1, 8, 2, 4, 9, 7, 22, 11, 10};

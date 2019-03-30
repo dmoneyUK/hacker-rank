@@ -1,6 +1,6 @@
 package leetcode.amazon.tree;
 
-import leetcode.amazon.tree.BinaryTree.TreeNode;
+import common.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

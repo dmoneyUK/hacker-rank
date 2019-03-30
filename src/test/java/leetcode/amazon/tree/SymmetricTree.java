@@ -1,6 +1,6 @@
 package leetcode.amazon.tree;
 
-import static leetcode.amazon.tree.BinaryTree.*;
+import common.TreeNode;
 
 public class SymmetricTree {
     

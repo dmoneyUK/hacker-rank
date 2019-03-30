@@ -1,4 +1,4 @@
-package hacker.rank.common;
+package common;
 
 import java.util.Scanner;
 

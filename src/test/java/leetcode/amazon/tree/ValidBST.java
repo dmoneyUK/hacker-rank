@@ -1,8 +1,7 @@
 package leetcode.amazon.tree;
 
-import leetcode.amazon.tree.BinaryTree.TreeNode;
+import common.TreeNode;
 import org.junit.Test;
-import org.omg.PortableInterceptor.INACTIVE;
 
 public class ValidBST {
     

@@ -1,9 +1,9 @@
-package leetcode.amazon.tree;
+package common;
 
 public class BinaryTree {
     
-    TreeNode root;
-    Integer arr[];
+    public TreeNode root;
+    public Integer arr[];
     
     public BinaryTree(Integer[] arr) {
         this.arr = arr;
@@ -13,7 +13,6 @@ public class BinaryTree {
     private TreeNode addNode(int i, TreeNode cur) {
         if (i < arr.length && arr[i]!=null) {
             cur = new TreeNode(arr[i]);
-            System.out.println("Added" + arr[i]);
             if (i * 2 + 1 < arr.length) {
                cur.left= addNode(i * 2 + 1, cur.left);
             }
@@ -22,17 +21,6 @@ public class BinaryTree {
             }
         }
         return cur;
-    }
-    
-    public static class TreeNode {
-        
-        int val;
-        TreeNode left;
-        TreeNode right;
-        
-        public TreeNode(int val) {
-            this.val = val;
-        }
     }
     
 }
