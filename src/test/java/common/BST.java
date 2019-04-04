@@ -6,13 +6,25 @@ public class BST {
     
     public TreeNode root;
     
-    public BST(int[] arr) {
+    public BST(Integer[] arr) {
         Arrays.stream(arr)
               .forEach(e -> root = addRecursive(root, e));
     }
     
     public long getMax() {
         return getRightRecursive(root).val;
+    }
+    
+    public TreeNode get(TreeNode curr, int i) {
+        TreeNode ans;
+        if (curr == null || curr.val == i) {
+            ans = curr;
+        } else if (curr.val > i) {
+            ans = get(curr.left, i);
+        } else {
+            ans = get(curr.right, i);
+        }
+        return ans;
     }
     
     private TreeNode getRightRecursive(TreeNode current) {
@@ -22,7 +34,9 @@ public class BST {
         return getRightRecursive(current.right);
     }
     
-    private TreeNode addRecursive(TreeNode current, int newValue) {
+    private TreeNode addRecursive(TreeNode current, Integer newValue) {
+        
+        if(newValue==null) return current;
         TreeNode newNode = new TreeNode(newValue);
         if (current == null) {
             return newNode;
