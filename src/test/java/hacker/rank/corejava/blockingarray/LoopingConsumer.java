@@ -11,7 +11,7 @@ public class LoopingConsumer implements Consumer<BlockingArray> {
             try {
                 System.out.println("Consume");
                 blockingArray.remove();
-                Thread.sleep(1000);
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

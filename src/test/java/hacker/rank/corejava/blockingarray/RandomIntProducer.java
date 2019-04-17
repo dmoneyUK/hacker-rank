@@ -9,7 +9,7 @@ public class RandomIntProducer {
         while (true) {
             int newElement = rd.nextInt(100);
             blockingArray.add(newElement);
-            Thread.currentThread().sleep(800);
+            Thread.currentThread().sleep(1000);
         }
     }
 }
