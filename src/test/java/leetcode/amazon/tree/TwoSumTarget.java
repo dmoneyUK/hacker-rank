@@ -2,7 +2,7 @@ package leetcode.amazon.tree;
 
 import common.BinaryTree;
 import common.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,7 +1,7 @@
 package hacker.rank.interviewpreparation.hashmap;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Set;
 

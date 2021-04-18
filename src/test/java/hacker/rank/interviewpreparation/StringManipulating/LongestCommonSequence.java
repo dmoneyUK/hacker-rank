@@ -1,7 +1,6 @@
 package hacker.rank.interviewpreparation.StringManipulating;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

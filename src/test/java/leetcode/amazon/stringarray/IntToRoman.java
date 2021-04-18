@@ -1,6 +1,6 @@
 package leetcode.amazon.stringarray;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Deque;
 import java.util.HashMap;

@@ -1,7 +1,7 @@
 package hacker.rank.interviewpreparation.StringManipulating;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

@@ -1,7 +1,6 @@
 package hacker.rank.interviewpreparation.StringManipulating;
 
-import javafx.util.Pair;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -115,5 +114,23 @@ public class Palindrome {
         }
 
         return result;
+    }
+
+    private class Pair<K, V> {
+        private K key;
+        private V value;
+
+        public Pair(K k, V v){
+            key = k;
+            value = v;
+        }
+
+        public V getValue() {
+            return value;
+        }
+
+        public K getKey() {
+            return key;
+        }
     }
 }
